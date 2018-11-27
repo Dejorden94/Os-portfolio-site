@@ -1,0 +1,142 @@
+body {
+  background: url(https://wallpapercave.com/wp/wp1895631.jpg);
+  background-size: cover;
+  height: 100vh;
+  widht: 100vw;
+  -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+}
+#about{
+  background: white;
+}
+#abouttekst{
+  float: left;
+  font-family: sans-serif;
+}
+#profilepic{
+  border-color: gray;
+  max-height: 200px;
+  max-width: 600px;
+}
+.Icons {
+  width: 65px;
+  height: 75px;
+  background: rgba(0, 0, 0, 0.0);
+  margin: 5px;
+  padding: 2px;
+  border-radius: 3px;
+  transition: all 0.15s ease-in-out;
+  border: 1px solid transparent;
+}
+.file{
+  width: 65px;
+  height: 75px;
+}
+.Icons:Hover {
+  background: rgba(66, 165, 245, 0.15);
+  border: 1px solid #90CAF9;
+  cursor: pointer;
+}
+
+.Icons:Active {
+  border: 1px solid #90CAF9;
+  background: rgba(66, 165, 245, 0.5);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.Label{
+  padding:0em;
+  margin-top: -20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif ;
+  color: white;
+  text-shadow: 1px 0 0 rgba(0, 0, 0, 0.5), -1px 0 0 rgba(0, 0, 0, 0.5), 0 1px 0 rgba(0, 0, 0, 0.5), 0 -1px 0 rgba(0, 0, 0, 0.5), 1px 1px rgba(0, 0, 0, 0.5), -1px -1px 0 rgba(0, 0, 0, 0.5), 1px -1px 0 rgba(0, 0, 0, 0.5), -1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+/*Bron voor scaling:https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_resize */
+#PopUpAbout{
+  width: 600px;
+  height:400px; 
+  display: none;
+  border: 2px solid;
+  resize: both;
+  overflow: auto;
+  display: none;
+  background-color: white;
+  max-width: 1000px;
+  max-height: 500px;
+}
+#PopUpWerk{
+  width: 600px;
+  height:400px; 
+  display: none;
+  border: 2px solid;
+  resize: both;
+  overflow: auto;
+  display: none;
+  background-color: white;
+  max-width: 1000px;
+  max-height: 500px;
+}
+#headerPopUp{
+  position: absolute;
+  z-index: 9;
+  margin-top: 0px;
+
+}
+#headerPopUpWerk{
+  position: absolute;
+  z-index: 9;
+  margin-top: 0px;
+
+}
+#popArt{
+  padding: 0px;
+  cursor: pointer;
+  z-index: 10;
+  width:600px;
+  height: 370px; 
+  max-width: 1000px;
+  border-top: 40px solid gray;
+  display: none;
+}
+#popArtWerk{
+  padding: 0px;
+  cursor: pointer;
+  z-index: 10;
+  width:600px;
+  height: 370px; 
+  max-width: 1000px;
+  border-top: 40px solid gray;
+  display: none;
+}
+
+#closeButton{
+  margin-top: 10px;
+  margin-left: 15px;
+  height: 20px;
+  width: 20px;
+  float: right;
+  position: absolute;
+  display: none;
+}
+#closeButtonWerk{
+  margin-top: 10px;
+  margin-left: 15px;
+  height: 20px;
+  width: 20px;
+  float: right;
+  position: absolute;
+  display: none;
+}
+#draggable {
+  width: 1024px;
+  height: 200px;
+  background: #4DB6AC;
+  border-radius: 3px;
+  margin-left: calc(50% - 512px);
+  margin-top: 30px;
+}
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.95) rotateX(25deg);
+  transition: all 0.3s ease-on-out;
+}

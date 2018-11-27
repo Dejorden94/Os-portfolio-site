@@ -1,0 +1,34 @@
+<!--Bron code en opzet: https://codepen.io/Keyon/pen/BKbMdE van William A. Keyon-->
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <title>Portfolio Dejorden Moerman</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <div id="IconWerk" class="Icons">
+      <img class="file" src="css/images/file.png">
+      <p class="Label">Werk</p>
+    </div>
+    <!--Dubbel clicken zorgt ervoor dat de popArt te voorschijn komt. -->
+    <div id="IconAbout" class="Icons">
+      <img class="file" src="css/images/user.png">
+      <p class="Label">Over mij</p>
+    </div>
+    <!--Dit is een pop up waar informatie in wordt weergegeven -->
+    <div id="headerPopUp">
+      <img id="closeButton" src="css/images/close.png">
+      <div id="popArt">
+        <iframe id="PopUpAbout" src="aboutme.html"></iframe>
+      </div>
+    </div>
+    <div id="headerPopUpWerk">
+      <img id="closeButtonWerk" src="css/images/close.png">
+      <div id="popArtWerk">
+        <iframe id="PopUpWerk" src="werk.html"></iframe>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
