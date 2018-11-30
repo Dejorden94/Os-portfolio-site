@@ -1,9 +1,21 @@
 body {
-  background: url(https://wallpapercave.com/wp/wp1895631.jpg);
+  background: linear-gradient(#f69d3c, #3f87a6);
+  /*background-image: url("images/achtergrond.jpg");*/
   background-size: cover;
   height: 100vh;
   widht: 100vw;
   -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
+}
+footer {
+  display: flex;
+  position:fixed;
+  bottom:0px;
+  left: 25%;
+  right: 25%;
+  height:70px;
+  width:100%;
+  max-width: 1000px;
+  background:#ffffff;
 }
 #about{
   background: white;
@@ -17,11 +29,19 @@ body {
   max-height: 200px;
   max-width: 600px;
 }
+#linkdIn{
+  text-decoration: none;
+  display: block;
+}
+#gitHub{
+  text-decoration: none;
+  display: block;
+}
 .Icons {
   width: 65px;
   height: 75px;
   background: rgba(0, 0, 0, 0.0);
-  margin: 5px;
+  margin: 10px;
   padding: 2px;
   border-radius: 3px;
   transition: all 0.15s ease-in-out;
@@ -29,7 +49,7 @@ body {
 }
 .file{
   width: 65px;
-  height: 75px;
+  height: 65px;
 }
 .Icons:Hover {
   background: rgba(66, 165, 245, 0.15);
@@ -52,28 +72,25 @@ body {
 }
 /*Bron voor scaling:https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_resize */
 #PopUpAbout{
-  width: 600px;
+  width: 700px;
   height:400px; 
   display: none;
   border: 2px solid;
-  resize: both;
   overflow: auto;
   display: none;
   background-color: white;
-  max-width: 1000px;
-  max-height: 500px;
+/*  max-width: 1000px;
+  max-height: 500px;*/
 }
 #PopUpWerk{
-  width: 600px;
+  width: 700px;
   height:400px; 
   display: none;
   border: 2px solid;
-  resize: both;
-  overflow: auto;
   display: none;
   background-color: white;
-  max-width: 1000px;
-  max-height: 500px;
+/*  max-width: 1000px;
+  max-height: 500px;*/
 }
 #headerPopUp{
   position: absolute;
@@ -88,12 +105,11 @@ body {
 
 }
 #popArt{
-  padding: 0px;
+  padding: 0;
   cursor: pointer;
   z-index: 10;
-  width:600px;
+  width:100%;
   height: 370px; 
-  max-width: 1000px;
   border-top: 40px solid gray;
   display: none;
 }
@@ -101,13 +117,11 @@ body {
   padding: 0px;
   cursor: pointer;
   z-index: 10;
-  width:600px;
+  width:100%;
   height: 370px; 
-  max-width: 1000px;
   border-top: 40px solid gray;
   display: none;
 }
-
 #closeButton{
   margin-top: 10px;
   margin-left: 15px;
@@ -125,18 +139,4 @@ body {
   float: right;
   position: absolute;
   display: none;
-}
-#draggable {
-  width: 1024px;
-  height: 200px;
-  background: #4DB6AC;
-  border-radius: 3px;
-  margin-left: calc(50% - 512px);
-  margin-top: 30px;
-}
-.hidden {
-  opacity: 0;
-  pointer-events: none;
-  transform: scale(0.95) rotateX(25deg);
-  transition: all 0.3s ease-on-out;
 }

@@ -2,7 +2,7 @@
 /*eslint-env browser*/
 /*eslint 'no-console': 0*/
 
-document.getElementById('IconAbout').addEventListener('dblclick', popclick);
+document.getElementById('IconAbout').addEventListener('click', popclick);
 document.getElementById('closeButton').addEventListener('click', popdisap);
 
 function popclick (){
@@ -16,7 +16,7 @@ document.getElementById("popArt").style.display = "none";
 document.getElementById("closeButton").style.display = "none";
 }
 
-document.getElementById('IconWerk').addEventListener('dblclick', popaboutclick);
+document.getElementById('IconWerk').addEventListener('click', popaboutclick);
 document.getElementById('closeButtonWerk').addEventListener('click', popaboutdisap);
 
 function popaboutclick (){
@@ -30,10 +30,12 @@ document.getElementById("popArtWerk").style.display = "none";
 document.getElementById("closeButtonWerk").style.display = "none";
 }
 
+document.getElementById('linkdIn').addEventListener('click', popaboutdisap);
+
 dragElement(document.getElementById("headerPopUp"));
 
 function dragElement(elmnt) {
-  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  var pos1 = 10, pos2 = 10, pos3 = 0, pos4 = 0;
   if (document.getElementById("popArt")) {
     // if present, the header is where you move the DIV from:
     document.getElementById("headerPopUp").onmousedown = dragMouseDown;
