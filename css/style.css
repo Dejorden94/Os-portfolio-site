@@ -7,15 +7,26 @@ body {
   -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;
 }
 footer {
+  left: 0;
+  padding: 0;
+  margin: 0;
   display: flex;
   position:fixed;
   bottom:0px;
-  left: 25%;
-  right: 25%;
-  height:70px;
-  width:100%;
-  max-width: 1000px;
-  background:#ffffff;
+  width: 100%;
+  height:50px;
+  background:#0f1112;
+}
+.linkFooter{
+  justify-content: center;
+  margin-left: 10px;
+}
+.iconsFooter{
+  width: 55px;
+  height: 45px;
+}
+.iconsFooter:hover{
+  border-bottom:2px solid lightblue
 }
 #about{
   background: white;
